@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-pzap
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0013-tenant/tkwch-fix-0075-0013-app/devfile-sample-pzap@sha256:bfa5dbf67699c24c02b65534403bd6076a3928b0f7e21e5f239d2be5f98a1599
+        name: my-nodejs
+        resources: {}
+status: {}
